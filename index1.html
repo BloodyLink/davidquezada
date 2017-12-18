@@ -1,0 +1,279 @@
+<?php
+header('location:enconstruccion.html');
+exit();
+?>
+
+<!doctype html>
+<header>
+		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		<title>David Quezada - Web Developer</title>
+		<meta charset="utf-8">
+</header>
+<style>
+	.navbar{background-color: #000000;}
+	ul.nav a:hover { color: #FFF !important;}
+	#inicio{padding: 100px 30px 0px; 30px;background-image: url("img/header.jpg"); margin-top: -20px;color: #FFFFFF;text-shadow: 1px 2px #000000;background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-color: #464646;background-size: cover;background-attachment: fixed;}
+	#quien_soy{padding: 50px 30px 50px 30px; background-color: #000000;color: #FFFFFF;}
+	#mis_habilidades{padding: 50px 30px 50px 30px;color: #FFFFFF;
+		background-image: url("img/space4k.jpg");background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-color: #000000;background-size: cover;background-position: center center;background-attachment: fixed;
+		text-shadow: 1px 3px #000000;
+	}
+	.progress{height: 20px;background-color: #FFFFFF}
+	.progress-bar{background-color: #6E6E6E;font-size: 20px;}
+	.servicios{background-color: #000000;color: #FFFFFF;}
+	.titulo{padding: 20px 20px 20px 20px;}
+	.skills{background-color: #000000;}
+	#servicios{
+		color: #FFFFFF;
+		padding-bottom: 50px;
+	}
+	#contacto{
+		color: #000000;
+		background-color: #FFFFFF; 
+	}
+	.btn-default{
+		background-color: #000000;
+		color: #FFFFFF;
+	}
+
+}
+.fb-like{
+	width: 200px;
+	height: 50px;
+	margin-top: 100px;
+}
+#footer{
+	background-color: #000;
+	height: 180px;
+}
+#idioma{
+  margin-top:15px;
+  color: #666;
+}
+
+#idioma a{
+  color: #FFF;
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+	<!--NAV BAR-->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '302921180065169',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+  			<div class="container-fluid">
+  				
+        
+
+    			<div class="navbar-header">
+          
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+    			</div>
+   				<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+   				
+      				<ul class="nav navbar-nav">
+        				<li><a href="#inicio">Inicio</a></li>
+        				<li><a href="#quien_soy">Quien soy</a></li>
+        				<li><a href="#mis_habilidades">Mis habilidades</a></li>
+        				<li><a href="#servicios">Servicios</a></li>
+        				<li><a href="#contacto">Contacto</a></li>
+      				</ul>
+    			</div>
+    		</div>
+    	</nav>
+  <!--Fin NAV BAR-->
+  <!--HEADER -->
+  <div class="container-fluid skills">
+  	<div class="row" id="inicio">
+
+  		<div class="col-sm-12">
+  			<img src="img/banner.png" class="img-responsive bottom-block" style="vertical-align: bottom;border: 0;">
+  		</div>
+  	</div> 
+  	<!--FIN HEADER-->
+  	<!--quien soy-->
+  	<div class="row" id="quien_soy">
+  		<div class="col-sm-12 text-center"><h1>Sobre m&iacute;...</h1><br /><br /></div>
+  		<div class="col-sm-4 col-sm-offset-2">
+  			<p class="lead">Oriundo de Concepción, viviendo en la región de Valparaíso, me dedico a la creación y mejora de sitios web para particulares y pequeñas empresas.</p>
+  			<p class="lead">Titulado como Técnico de Nivel Superior Analista Programador en INACAP Valparaíso.</p>
+  		</div>
+  		<div class="col-sm-4">
+  			<p class="lead">Conocimientos en HTML5, Javascript, Jquery, PHP, MySql y otras tecnologías web.</p>
+  			<p class="lead">Cuento con alianzas relacionadas con el desarrollo y el diseño web, para cumplir tus requerimientos de la mejor forma.</p>
+  		</div>
+  	</div>	
+  	<!--FIN quien soy-->
+  	<!--mis habilidades-->
+	<div class="container-fluid" id="mis_habilidades">
+		<div class="row">
+			<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/html.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div>
+	  		<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/css.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div>
+	  		<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/js.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div>
+	  		<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/jquery.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div> 
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/php.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div>
+	  		<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/mysql.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div>
+	  		<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/bs.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div>
+	  		<div class="col-sm-3">
+	  			<img class="img-responsive center-block" src="img/angular.png" alt="" style="margin-bottom: 30px;height: 200px;width: 200px;">
+	  		</div> 
+		</div>
+	  		 		
+	</div>
+  	<!--FIN mis habilidades-->
+  	<!--servicios-->
+
+  	<div id="servicios">
+  		<div class="row servicios">
+  			<div class="col-sm-12 text-center"><br /><br /><h1>Servicios...</h1></div>
+  		</div>
+  		<br /><br /><br />
+  		<div class="row">
+  			<div class="col-sm-3 col-sm-offset-6 text-left">
+  				<p class="lead">Creación y mantenimiento de sitios web:
+  				<ul>
+  					<li>Diseño a pedido.</li>
+  					<li>Páginas responsivas (adaptables a cualquier dispositivo).</li>
+  					<li>Autoadministrables.</li>
+  				</ul>
+  				</p>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-sm-3 col-sm-offset-3 text-left">
+  				<p class="lead">Talleres:
+  				<ul>
+  					<li>Computación nivel básico.</li>
+  					<li>Programación básica.</li>
+  					<li>Creación de páginas web desde cero (HTML + CSS + JS).</li>
+  					<li>Inglés nivel básico-medio-avanzado.</li>
+  				</ul>
+  				</p>
+  			</div>
+  		</div>
+	  		
+  	</div>
+
+  	<!--FIN servicios-->
+
+  	
+  </div>
+	
+
+	<div id="contacto" class="container-fluid">
+
+		<br /><br /><br />
+		<div class="col-sm-12 text-center"><h1>Contacto</h1></div>
+		<br /><br />
+	<div class="col-sm-6 text-center">
+		<p class="lead">Contáctame al número <a href="tel:+56995403558">+56995403558</a> (también disponible en Whatsapp) o a mi correo electrónico <a href="mailto:contacto@davidquezada.cl">contacto@davidquezada.cl</a></p>
+		<br /><br /><br /><br />
+	</div>
+	<div class="col-sm-6 text-center">
+		<h3>Presencia en la Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/davidquezadawebdev" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/BloodyLink_" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://cl.linkedin.com/in/david-quezada-4114a637" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin fa-3x"></i></a>
+                            </li>
+                        </ul>
+                        <br />
+                        <!-- BOTON LIKE -->
+
+   				<div class="fb-like" data-href="http://davidquezada.cl/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+   				<!-- BOTON LIKE -->
+   				<br /><br /><br />
+	</div>
+<br /><br /><br /><br /><br /><br /><br /><br />
+  	</div>
+
+  	</div>
+<div class="container-fluid" id="footer">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+		<br /><br /><br />
+    <!-- idioma -->
+        <div id="idioma">
+          Idioma/Language: Español | <a href="en/index.html">English</a>
+        </div>
+        
+
+        <!-- idioma -->
+        <br />
+			<p">David Quezada - 2016</p>
+		</div>
+	</div>
+</div>
+		
+	</body>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81383109-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
